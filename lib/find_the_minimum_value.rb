@@ -1,3 +1,9 @@
 def find_min_value(array)
-  # Add your solution here
+  min = Float::INFINITY
+  for element in array
+    if element < min
+      min = element
+    end
+  end
+  min
 end
